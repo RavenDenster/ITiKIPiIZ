@@ -1,0 +1,10 @@
+__pycache__
+annot.opcorpora_cache.pkl
+annot.opcorpora.xml
+dict.opcorpora.xml
+dict_cache.pkl
+evaluation_details.
+tests_gold.txt
+tests_input.txt
+tests_pred.txt
+evaluation_details.txt
