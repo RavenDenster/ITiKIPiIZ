@@ -31,11 +31,14 @@ class Lemmatizer:
             sp = map_pos(c['pos'])
             pos_to_cands.setdefault(sp, []).append(c)
 
-        # Правило 1: для однобуквенных слов предпочитаем союз (CONJ)
-        if len(token) == 1 and 'CONJ' in pos_to_cands:
-            return max(pos_to_cands['CONJ'], key=lambda c: c['freq'])
+        # Правило 1: для однобуквенных слов сначала союз, потом предлог
+        if len(token) == 1:
+            if 'CONJ' in pos_to_cands:
+                return max(pos_to_cands['CONJ'], key=lambda c: c['freq'])
+            if 'PR' in pos_to_cands:
+                return max(pos_to_cands['PR'], key=lambda c: c['freq'])
 
-        # Правило 2: для двухбуквенных слов предпочитаем предлог (PR)
+        # Правило 2: для двухбуквенных слов предпочитаем предлог
         if len(token) == 2 and 'PR' in pos_to_cands:
             return max(pos_to_cands['PR'], key=lambda c: c['freq'])
 
