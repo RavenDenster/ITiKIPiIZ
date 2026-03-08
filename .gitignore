@@ -8,3 +8,4 @@ tests_gold.txt
 tests_input.txt
 tests_pred.txt
 evaluation_details.txt
+venv
