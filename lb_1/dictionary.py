@@ -95,7 +95,7 @@ class Dictionary:
 
     def get_candidates(self, word: str) -> list:
         norm = normalize(word)
-        print(self.word_map.get('крикнул', 'не найдено'))
+        # print(self.word_map.get('крикнул', 'не найдено'))
         exact = self.word_map.get(norm, [])
         if exact:
             return exact
