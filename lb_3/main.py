@@ -119,7 +119,6 @@ def summarize_all(texts: List[str]) -> List[str]:
         idf = None
     return [summarize_document(t, MAX_SUMMARY_LENGTH, idf) for t in texts]
 
-# ======================== ВСТРОЕННАЯ ОЦЕНКА ROUGE ========================
 def get_ngrams(tokens, n):
     return set(zip(*[tokens[i:] for i in range(n)]))
 

@@ -9,3 +9,13 @@ tests_input.txt
 tests_pred.txt
 evaluation_details.txt
 venv
+org-reviews.jsonl
+russian_bank_reviews.csv
+russian_jokes.json
+test-ru-reviews-classification.jsonl
+test-RuSentiTweet.parquet
+train-ru-reviews-classification.jsonl
+train-RuSentiTweet.parquet
+val-RuSentiTweet.parquet
+validation-ru-reviews-classification.jsonl
+sentiment_model
