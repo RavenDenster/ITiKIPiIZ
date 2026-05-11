@@ -19,3 +19,5 @@ train-RuSentiTweet.parquet
 val-RuSentiTweet.parquet
 validation-ru-reviews-classification.jsonl
 sentiment_model
+opus-mt-en-ru
+output
